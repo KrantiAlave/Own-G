@@ -63,7 +63,9 @@ function draw() {
     }
   }
   
-  
+  if(oppG1.isTouching(player) || oppG2.isTouching(player) || oppG3.isTouching(player)){
+    score = score+1;
+  }
 
   //spawnCoin();
   spawnCloud();
